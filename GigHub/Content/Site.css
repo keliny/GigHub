@@ -1,6 +1,10 @@
-﻿.bg-reddish {
-  background-color: #ff4342;
-  border-color: #ff4342; }
+﻿span#Venue-error {
+  color: red;
+  font-weight: bold; }
+
+.bg-reddish {
+  background-color: #FF5B00;
+  border-color: #FF5B00; }
 
 .bg-reddish > .container > a {
   color: white; }
@@ -17,3 +21,21 @@
 
 .bg-reddish > .container > a {
   color: white; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit; }
