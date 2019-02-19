@@ -1,4 +1,9 @@
-﻿body {
+﻿$background-color-primary: #FF5B00;
+$background-color-day: #eae9e9;
+$color-text-artist: #333;
+
+body {
+    
 }
 
 span#Venue-error {
@@ -7,8 +12,8 @@ span#Venue-error {
 }
 
 .bg-reddish {
-    background-color: #FF5B00;
-    border-color: #FF5B00;
+    background-color: $background-color-primary;
+    border-color: $background-color-primary;
 }
 
 .bg-reddish > .container > a {
@@ -22,6 +27,7 @@ span#Venue-error {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top:35px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -51,3 +57,49 @@ h6,
     color: inherit;
 }
 
+.gigs {
+    list-style:none;
+    padding:5px;
+}
+
+.gigs > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gigs > li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    padding: 5px;
+}
+
+.gigs > li .date .month{
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight: bold;
+    padding:2px;
+}
+
+.gigs > li .date .day {
+    background: $background-color-day;
+    color: $color-text-artist;
+    font-size:20px;
+    padding:2px;
+}
+
+.gigs > li .date {
+    background: $background-color-primary;
+    color: white;
+    text-align: center;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.gigs > li .details .artist {
+    font-weight:bold;
+    display:block;
+}
+.gigs > li .details .genre{
+    font-size:15px;
+}
